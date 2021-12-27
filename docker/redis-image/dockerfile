@@ -1,0 +1,11 @@
+#Create an Image from a base image --?
+
+FROM alpine
+
+# Download and install dependencies
+
+RUN apk add --update redis
+
+# Command for container
+
+CMD ["redis-cli"]
